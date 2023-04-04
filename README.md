@@ -6,10 +6,16 @@ This project is an API for a Bitcoin Node application that allows communication 
 
 ```
 bitcoin-node/
-| -- config/clients/ (rpcClient.js and sshClient.js)
-| -- routes/api/v1/ (route handler files for API endpoints)
-| -- app.js (file handling the routes using fs)
-| -- index.js (entry point of the application)
+| -- config/
+|     | -- clients/ (rpcClient.js and sshClient.js)
+| -- functions/ (mostly functions called for execution in routes/)
+| -- routes/
+|     | -- api/
+|     |     | -- v1/
+|     |     |     | -- getBlockCount.js
+|     |     | -- index.js
+| -- app.js (for setting up the Express app and middleware)
+| -- index.js (for starting the server)
 ```
 
 ## Setup
