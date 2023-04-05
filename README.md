@@ -57,7 +57,7 @@ The application will start running on http://localhost:3000.
 ### `POST /api/v1/getBlockCount`
 Returns the current block count of the Bitcoin node.
 
-### `POST /api/v1/ls`
+### `GET /api/v1/ls`
 Executes the ls -l command on the server and returns the result.
 
 ## License
