@@ -55,7 +55,7 @@ The application will start running on http://localhost:$PORT.
 
 ## Sample API Endpoints
 
-### `POST /api/v1/getBlockCount`
+### `GET /api/v1/getBlockCount`
 Returns the current block count of the Bitcoin node.
 
 ### `GET /api/v1/ls`
