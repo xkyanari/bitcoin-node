@@ -18,6 +18,6 @@ const rpcClient = axios.create({
   }
 });
 
-console.log("rpcClient loaded");
+console.log("Connected to the Bitcoin Node.");
 
 module.exports = rpcClient;

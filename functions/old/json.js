@@ -1,4 +1,4 @@
-const init = require('./mempool');
+const init = require('../mempool');
 
 const sendResponse = async (res, status) => {
     const fees = await init();

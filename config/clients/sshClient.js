@@ -1,18 +1,20 @@
 const { Client } = require('ssh2');
+const fs = require('fs');
 require('dotenv').config();
 
 const {
   SSH_HOSTNAME,
   SSH_PORT,
   SSH_USERNAME,
-  SSH_PASSWORD
 } = process.env;
+
+const privateKey = process.env.SSH_PRIVATE_KEY.replace(/\\n/g, '\n');
 
 const options = {
   host: SSH_HOSTNAME,
   port: SSH_PORT,
   username: SSH_USERNAME,
-  password: SSH_PASSWORD
+  privateKey: privateKey,
 };
 
 const conn = new Client();
