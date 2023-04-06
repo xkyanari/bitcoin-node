@@ -34,14 +34,15 @@ npm install
 3. Set the environment variables:
 
 ```
-RPC_USERNAME=<rpc-username>
-RPC_PASSWORD=<rpc-password>
-RPC_HOSTNAME=<rpc-hostname>
-RPC_PORT=<rpc-port>
-SSH_HOSTNAME=<ssh-hostname>
-SSH_PORT=<ssh-port>
-SSH_USERNAME=<ssh-username>
-SSH_PASSWORD=<ssh-password>
+PORT = <listening-port>
+RPC_USERNAME = <rpc-user>
+RPC_PASSWORD = <rpc-password>
+RPC_HOSTNAME = <rpc-hostname>
+RPC_PORT = <rpc-port>
+SSH_HOSTNAME = <ssh-hostname>
+SSH_PORT = <ssh-port>
+SSH_USERNAME = <ssh-username>
+SSH_PRIVATE_KEY = <ssh-private-key-string>
 ```
 
 4. Run the application:
@@ -50,7 +51,7 @@ SSH_PASSWORD=<ssh-password>
 npm start
 ```
 
-The application will start running on http://localhost:3000.
+The application will start running on http://localhost:$PORT.
 
 ## Sample API Endpoints
 
