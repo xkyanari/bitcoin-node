@@ -13,6 +13,7 @@ bitcoin-node/
 |     | -- api/
 |     |     | -- v1/
 |     |     |     | -- getBlockCount.js
+|     |     |     | -- ls.js
 |     |     | -- index.js
 | -- app.js (for setting up the Express app and middleware)
 | -- index.js (for starting the server)
